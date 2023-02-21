@@ -19,7 +19,7 @@ export const GetBooks = () => {
       .then(function (response) {
         setBooks(response.data);
         setLoading(false);
-        console.log(response.data);
+        // console.log(response.data);
       }).catch(function (error) {
         setError(error);
         setLoading(false);
@@ -51,7 +51,7 @@ export const GetChapters = () => {
       .then(function (response) {
         setChapter(response.data);
         setLoading(false);
-        console.log(response.data);
+        // console.log(response.data);
       }).catch(function (error) {
         setError(error);
         setLoading(false);
@@ -72,7 +72,7 @@ export const GetVerses = () => {
     const verses = {
       method: 'GET',
       url: 'https://ajith-holy-bible.p.rapidapi.com/GetVerses',
-      params: {Book: 'Genesis', chapter: '1', VerseFrom: '5', VerseTo: '8'},
+      params: {Book: 'Genesis', chapter: '1', VerseFrom: '5', VerseTo: '15'},
       headers: {
         'X-RapidAPI-Key': '0e0b03802dmsh0ff85f33cd9c03cp167843jsne657c6b58de7',
         'X-RapidAPI-Host': 'ajith-holy-bible.p.rapidapi.com'
@@ -82,7 +82,7 @@ export const GetVerses = () => {
     .then(function (response) {
       setVerse(response.data);
       setLoading(false);
-      console.log(response.data);
+      // console.log(response.data);
     }).catch(function (error) {
       setError(error);
       setLoading(false);

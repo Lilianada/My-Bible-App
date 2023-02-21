@@ -1,0 +1,51 @@
+.booksWrap{
+    display: grid;
+    place-items: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 720px;
+    padding: 20px;
+}
+
+.booksWrap h3{
+    background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.searchWrap{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.searchScripture_wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.searchScripture{
+    margin-right: 16px;
+}
+
+.searchField {
+    width: 100px;
+    height: 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 0 1rem;
+    font-size: var(--eighteen);
+    margin-left: 8px;
+}
+
+.scriptureText{
+    text-align: justify;
+}
